@@ -2,7 +2,7 @@
 
 .catalog {
   display: grid;
-  grid-template-columns: repeat(auto-fill, min-max($width-card, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
 
@@ -22,10 +22,6 @@
 
   &__card:not(:nth-child(4n)) {
     margin-right: $card-padding;
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
